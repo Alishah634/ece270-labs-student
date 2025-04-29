@@ -1,0 +1,79 @@
+(kicad_sch
+    (version 20231120)
+    (generator "eeschema")
+    (generator_version "8.0")
+
+    ; ----------------------------------------------------------------------
+    ;  Example KiCad schematic with standard 74xx logic gates, LEDs, etc.
+    ;  This is just an example. Students will replace ALL of the code in this file
+    ;  to show their own circuit for their own kicad schematic submission. 
+    ; ----------------------------------------------------------------------
+
+    (uuid "09c85cc4-e2f3-4df5-8e1e-5061698d9d5b")
+    (paper "A4")
+
+    ; The 'lib_symbols' section references libraries like 74xx, Device, Switch, etc.
+    (lib_symbols
+        ;  -- Symbol references go here, referencing 74HC00, 74HC02, LED, Resist, etc. --
+        ;  This big block basically lists each library symbol in the design.
+        ;  (Truncated for brevity in this explanation, but the full text is below.)
+    )
+
+    ;  -------------- Junctions --------------
+    (junction
+        (at 114.3 90.17)
+        (uuid "020041d6-678f-44e9-8982-c7ffd500937b")
+    )
+    (junction
+        (at 114.3 146.05)
+        (uuid "05300254-6d86-4a81-aba0-74b896d5d213")
+    )
+    ; (and so on—various net junctions in the schematic) 
+
+    ; -------------- Wires --------------
+    (wire
+        (pts
+            (xy 80.01 59.69) (xy 80.01 78.74)
+        )
+        (uuid "0158e286-9688-48d8-a747-ba5a8b8b5aaf")
+    )
+    (wire
+        (pts
+            (xy 161.29 76.2) (xy 173.99 76.2)
+        )
+        (uuid "02bbce17-c1cb-4027-b0fd-82df31029b60")
+    )
+    ; (more wires)...
+
+    ; -------------- Symbol Instances --------------
+    (symbol
+        (lib_id "74xx:74HC00")
+        (at 210.82 66.04 0)
+        (unit 5)
+        (uuid "10be0c41-d0f3-4c96-b359-b03fdc61092a")
+        (property "Reference" "U2"
+            (at 217.17 64.7699 0)
+        )
+        (property "Value" "74HC00"
+            (at 217.17 67.3099 0)
+        )
+        ; pins, footprints, datasheet references, etc.
+    )
+    (symbol
+        (lib_id "74xx:74HC04")
+        (at 238.76 66.04 0)
+        (unit 7)
+        (uuid "2317b6b1-5ddd-43e5-8199-d59e89078e69")
+        (property "Reference" "U1")
+        (property "Value" "74HC04")
+        ; ...
+    )
+    ; More symbols for 74HC02, 74HC86, 74LS08, plus resistors, LEDs, and power
+    ; symbols (GND, +5V)...
+
+    (sheet_instances
+        (path "/"
+            (page "1")
+        )
+    )
+)
